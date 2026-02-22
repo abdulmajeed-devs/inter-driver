@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Kontaktieren Sie Inter Driver für Buchungen und Anfragen. Telefonisch, per E-Mail oder über unser Kontaktformular. Wir sind 24/7 für Sie da.">
+    <title>Kontakt - Inter Driver Fahrerservice</title>
+    <link rel="canonical" href="http://inter-driver.ondigitalocean.app/contact.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.ondigitalocean.app/contact.html">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #dee2e6;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-sm) 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        main {
+            padding: var(--spacing-lg) 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .contact-card {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .contact-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .contact-form {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-top: var(--spacing-md);
+        }
+        
+        .form-group {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-button {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--accent-color);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-links {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .footer-links a {
+            margin: 0 var(--spacing-sm);
+        }
+        
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: var(--spacing-sm);
+                justify-content: center;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">inter driver</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Leistungen</a></li>
+                    <li><a href="how-it-works.html">So funktioniert's</a></li>
+                    <li><a href="pricing.html">Preise</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontaktieren Sie uns</h1>
+            <p>Wir sind 24/7 für Sie erreichbar</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <article>
+                <section>
+                    <p>Sie möchten eine Fahrt buchen, haben Fragen zu unserem Service oder benötigen ein individuelles Angebot? Wir freuen uns auf Ihre Kontaktaufnahme. Unser Team steht Ihnen jederzeit zur Verfügung und beantwortet gerne alle Ihre Fragen.</p>
+                </section>
+
+                <section>
+                    <h2>Kontaktmöglichkeiten</h2>
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <h3>📞 Telefon</h3>
+                            <p><strong>24/7 Hotline:</strong><br>+32 2 XXX XXXX</p>
+                            <p>Rufen Sie uns jederzeit an – Tag und Nacht. Unser freundliches Team nimmt Ihre Buchung entgegen oder beantwortet Ihre Fragen.</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>✉️ E-Mail</h3>
+                            <p><strong>Allgemeine Anfragen:</strong><br>info@inter-driver.be</p>
+                            <p><strong>Buchungen:</strong><br>booking@inter-driver.be</p>
+                            <p>Wir antworten in der Regel innerhalb weniger Stunden auf alle E-Mail-Anfragen.</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>💬 WhatsApp</h3>
+                            <p><strong>WhatsApp Business:</strong><br>+32 4XX XXX XXX</p>
+                            <p>Für schnelle Anfragen und Buchungen können Sie uns auch per WhatsApp kontaktieren.</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <h3>📍 Adresse</h3>
+                            <p><strong>Inter Driver Belgium</strong><br>
+                            [Straße und Hausnummer]<br>
+                            [PLZ] Brüssel<br>
+                            Belgien</p>
+                            <p>Besuchen Sie uns nach Terminvereinbarung in unserem Büro.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Buchungsanfrage</h2>
+                    <p>Nutzen Sie unser Kontaktformular für eine schnelle und unkomplizierte Buchungsanfrage. Wir melden uns umgehend bei Ihnen mit einem individuellen Angebot.</p>
+                    
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Gewünschter Service</label>
+                                <select id="service" name="service">
+                                    <option value="">Bitte wählen...</option>
+                                    <option value="airport">Airport-Transfer</option>
+                                    <option value="business">Business-Fahrt</option>
+                                    <option value="event">Event/Hochzeit</option>
+                                    <option value="tour">Stadttour</option>
+                                    <option value="longdistance">Langstrecke</option>
+                                    <option value="other">Andere</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pickup">Abholadresse</label>
+                                <input type="text" id="pickup" name="pickup">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="destination">Zieladresse</label>
+                                <input type="text" id="destination" name="destination">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Datum</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Gewünschte Abholzeit</label>
+                                <input type="time" id="time" name="time">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="passengers">Anzahl Passagiere</label>
+                                <input type="number" id="passengers" name="passengers" min="1" max="8">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Nachricht / Besondere Wünsche</label>
+                                <textarea id="message" name="message" placeholder="Teilen Sie uns hier weitere Details mit, z.B. Gepäckmenge, Kindersitze, besondere Anforderungen..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Anfrage senden</button>
+                        </form>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Geschäftszeiten</h2>
+                    <p>Unser Fahrerservice ist 24 Stunden am Tag, 7 Tage die Woche verfügbar. Buchungen können jederzeit vorgenommen werden.</p>
+                    
+                    <p><strong>Bürozeiten (für persönliche Beratung):</strong></p>
+                    <ul>
+                        <li>Montag - Freitag: 08:00 - 18:00 Uhr</li>
+                        <li>Samstag: 09:00 - 14:00 Uhr</li>
+                        <li>Sonntag: Nach Vereinbarung</li>
+                    </ul>
+                    
+                    <p>Außerhalb der Bürozeiten erreichen Sie uns weiterhin telefonisch für dringende Buchungen und Anfragen.</p>
+                </section>
+
+                <section>
+                    <h2>Häufige Fragen</h2>
+                    <p>Viele Ihrer Fragen werden möglicherweise bereits in unserem <a href="faq.html">FAQ-Bereich</a> beantwortet. Schauen Sie dort vorbei, um schnelle Antworten auf häufig gestellte Fragen zu finden.</p>
+                </section>
+
+                <section>
+                    <h2>Feedback und Beschwerden</h2>
+                    <p>Ihre Meinung ist uns wichtig! Wenn Sie Feedback zu Ihrer Fahrt haben – sei es positiv oder konstruktiv – möchten wir davon hören. Nur so können wir unseren Service kontinuierlich verbessern.</p>
+                    
+                    <p>Für Beschwerden oder Anregungen kontaktieren Sie uns bitte direkt per E-Mail an: <strong>feedback@inter-driver.be</strong></p>
+                    
+                    <p>Wir nehmen jede Rückmeldung ernst und bemühen uns, Probleme schnell und zufriedenstellend zu lösen.</p>
+                </section>
+
+                <section>
+                    <h2>Kooperationen und Partnerschaften</h2>
+                    <p>Sind Sie ein Hotel, Eventveranstalter, Reisebüro oder Unternehmen und interessieren sich für eine Partnerschaft? Wir arbeiten gerne mit Partnern zusammen und bieten spezielle Konditionen für B2B-Kunden.</p>
+                    
+                    <p>Kontaktieren Sie uns für weitere Informationen über unsere Partnerschaftsprogramme: <strong>partners@inter-driver.be</strong></p>
+                </section>
+
+                <section>
+                    <h2>Arbeiten bei Inter Driver</h2>
+                    <p>Interessieren Sie sich für eine Karriere als professioneller Chauffeur? Wir sind immer auf der Suche nach qualifizierten, zuverlässigen Fahrern, die Teil unseres Teams werden möchten.</p>
+                    
+                    <p>Anforderungen:</p>
+                    <ul>
+                        <li>Gültiger Führerschein und mehrjährige Fahrerfahrung</li>
+                        <li>Einwandfreies Führungszeugnis</li>
+                        <li>Ausgezeichnete Ortskenntnisse in Belgien</li>
+                        <li>Freundliches, professionelles Auftreten</li>
+                        <li>Mehrsprachigkeit (Niederländisch, Französisch, Deutsch, Englisch) von Vorteil</li>
+                    </ul>
+                    
+                    <p>Bewerbungen senden Sie bitte an: <strong>jobs@inter-driver.be</strong></p>
+                </section>
+
+                <section>
+                    <h2>Datenschutz</h2>
+                    <p>Ihre Privatsphäre ist uns wichtig. Alle Daten, die Sie uns über das Kontaktformular oder andere Kanäle übermitteln, werden vertraulich behandelt und nur für die Bearbeitung Ihrer Anfrage verwendet.</p>
+                    
+                    <p>Weitere Informationen finden Sie in unserer <a href="privacy.html">Datenschutzerklärung</a>.</p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Datenschutz</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2026 inter driver. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

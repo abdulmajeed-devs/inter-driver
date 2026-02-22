@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Professioneller Fahrerservice für Geschäfts- und Privatreisen in Belgien. Zuverlässige Chauffeure, komfortable Fahrzeuge und erstklassiger Service zu fairen Preisen.">
+    <title>Inter Driver - Professioneller Fahrerservice in Belgien</title>
+    <link rel="canonical" href="http://inter-driver.ondigitalocean.app">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.ondigitalocean.app">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Inter Driver - Professioneller Fahrerservice in Belgien">
+    <meta property="og:description" content="Professioneller Fahrerservice für Geschäfts- und Privatreisen in Belgien. Zuverlässige Chauffeure, komfortable Fahrzeuge und erstklassiger Service.">
+    <meta property="og:url" content="http://inter-driver.ondigitalocean.app">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_BE">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "inter driver",
+        "description": "Professioneller Fahrerservice für Geschäfts- und Privatreisen in Belgien",
+        "url": "http://inter-driver.ondigitalocean.app",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BE"
+        },
+        "priceRange": "$$",
+        "serviceType": ["Chauffeur Service", "Fahrerservice", "Business Transport", "Airport Transfer"]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #dee2e6;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-sm) 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Main Content */
+        main {
+            padding: var(--spacing-lg) 0;
+        }
+        
+        section {
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: var(--spacing-md);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .benefit-card {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .benefit-card h3 {
+            color: var(--secondary-color);
+        }
+        
+        /* Map Section */
+        .map-section {
+            background-color: var(--light-bg);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .map-wrapper {
+            max-width: 900px;
+            margin: var(--spacing-md) auto 0;
+            padding: 0 var(--spacing-sm);
+        }
+        
+        .map-wrapper iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        /* Author Bio */
+        .author-bio {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-top: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
+        
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+            flex-shrink: 0;
+        }
+        
+        .author-info h3 {
+            margin-top: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-links {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .footer-links a {
+            margin: 0 var(--spacing-sm);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: var(--spacing-sm);
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">inter driver</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Leistungen</a></li>
+                    <li><a href="how-it-works.html">So funktioniert's</a></li>
+                    <li><a href="pricing.html">Preise</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Inter Driver - Ihr professioneller Fahrerservice in Belgien</h1>
+            <p>Entspannt ankommen, sicher unterwegs - mit unserem erstklassigen Chauffeur-Service</p>
+            <a href="contact.html" class="cta-button">Jetzt Buchung anfragen</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <article>
+                <section>
+                    <h2>Willkommen bei Ihrem zuverlässigen Partner für professionelle Fahrdienstleistungen</h2>
+                    <p>In der modernen Geschäftswelt und im privaten Alltag ist Mobilität ein entscheidender Faktor für Erfolg und Lebensqualität. Ob Sie zu einem wichtigen Geschäftstermin müssen, Gäste vom Flughafen abholen möchten oder einfach komfortabel und stressfrei reisen wollen – unser <a href="https://interdrivers.be/" target="_blank" rel="noopener">inter driver</a> Service steht Ihnen mit höchster Professionalität zur Seite.</p>
+                    
+                    <p>Als führender Anbieter von Fahrerservices in Belgien haben wir uns der Exzellenz verschrieben. Unsere Mission ist es, Ihnen nicht nur eine Fahrt von A nach B zu bieten, sondern ein ganzheitliches Erlebnis, das Komfort, Sicherheit und Zuverlässigkeit vereint. Mit jahrelanger Erfahrung im Transportwesen verstehen wir die Bedürfnisse unserer Kunden und setzen alles daran, diese zu übertreffen.</p>
+                    
+                    <p>Unser Fahrerservice richtet sich an Geschäftskunden, Privatpersonen und alle, die Wert auf erstklassigen Service legen. Wir wissen, dass Ihre Zeit wertvoll ist und Sie sich auf wichtigere Dinge konzentrieren möchten, als sich durch den Verkehr zu kämpfen oder nach Parkplätzen zu suchen. Daher übernehmen wir diese Aufgaben für Sie – professionell, diskret und mit einem Lächeln.</p>
+                </section>
+
+                <section>
+                    <h2>Warum erstklassige Fahrdienstleistungen für Ihr Unternehmen unverzichtbar sind</h2>
+                    <p>In Belgien, mit seinen pulsierenden Wirtschaftszentren wie Brüssel, Antwerpen und Gent, ist ein professioneller Fahrerservice mehr als nur Luxus – er ist eine strategische Investition. Geschäftsführer, Manager und Unternehmer wissen, dass Zeit Geld ist. Jede Minute, die im Stau verbracht wird oder mit der Parkplatzsuche verschwendet wird, ist eine verlorene Gelegenheit.</p>
+                    
+                    <p>Unsere Dienstleistung ermöglicht es Ihnen, diese Zeit produktiv zu nutzen. Während Sie bequem im Fond unserer modernen Fahrzeuge sitzen, können Sie E-Mails beantworten, Telefonate führen, Präsentationen vorbereiten oder sich einfach entspannen und mental auf das nächste Meeting vorbereiten. Diese Produktivitätssteigerung zahlt sich schnell aus und rechtfertigt die Investition in einen professionellen Fahrerservice.</p>
+                    
+                    <p>Darüber hinaus vermittelt die Ankunft mit einem professionellen Chauffeur einen Eindruck von Seriosität und Erfolg. Ob Sie Geschäftspartner beeindrucken, wichtige Kunden abholen oder an einer hochrangigen Veranstaltung teilnehmen – mit unserem Service präsentieren Sie sich von Ihrer besten Seite. Der erste Eindruck zählt, und wir helfen Ihnen, diesen unvergesslich zu gestalten.</p>
+                </section>
+
+                <section>
+                    <h3>Unsere Kernkompetenzen im Überblick</h3>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h3>Erfahrene Chauffeure</h3>
+                            <p>Unsere Fahrer sind nicht nur ausgezeichnete Autofahrer, sondern auch geschult in Kundenservice, Diskretion und lokalem Wissen. Sie kennen die besten Routen und vermeiden Staus, um Sie pünktlich ans Ziel zu bringen.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>Moderne Fahrzeugflotte</h3>
+                            <p>Wir bieten eine Auswahl an komfortablen, gepflegten Fahrzeugen – von eleganten Limousinen bis hin zu geräumigen Vans für Gruppenfahrten. Alle Fahrzeuge werden regelmäßig gewartet und sind mit modernster Technologie ausgestattet.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>Pünktlichkeit garantiert</h3>
+                            <p>Wir verstehen, wie wichtig Termine sind. Durch sorgfältige Planung, Verkehrsüberwachung und Pufferzeiten garantieren wir, dass Sie stets rechtzeitig ankommen. Ihre Zufriedenheit ist unser Erfolg.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>Flexible Buchungsoptionen</h3>
+                            <p>Ob kurzfristige Buchung, regelmäßige Fahrten oder langfristige Vereinbarungen – wir passen uns Ihren Bedürfnissen an. Unser Buchungssystem ist einfach und kundenfreundlich gestaltet.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>Transparente Preisgestaltung</h3>
+                            <p>Keine versteckten Kosten, keine Überraschungen. Sie erhalten im Voraus ein klares Angebot, sodass Sie genau wissen, was Sie erwartet. Unsere Preise sind fair und wettbewerbsfähig.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <h3>24/7 Verfügbarkeit</h3>
+                            <p>Geschäfte machen keine Pause, und wir auch nicht. Unser Service ist rund um die Uhr verfügbar, um Ihren Bedürfnissen gerecht zu werden – egal ob frühmorgendlicher Flughafentransfer oder spätnächtliche Rückfahrt.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Vielfältige Einsatzmöglichkeiten unseres Fahrerservices</h3>
+                    <p>Unser Angebot ist vielseitig und deckt nahezu jeden Transportbedarf ab. Zu unseren beliebtesten Dienstleistungen gehören Airport-Transfers, bei denen wir Sie zuverlässig vom und zum Flughafen bringen. Egal ob Brussels Airport, Charleroi oder andere regionale Flughäfen – wir sind zur Stelle, beobachten Flugzeiten und passen uns bei Verspätungen flexibel an.</p>
+                    
+                    <p>Für Geschäftskunden bieten wir maßgeschneiderte Corporate-Lösungen. Dies kann die tägliche Fahrt zur Arbeit sein, Transfers zwischen verschiedenen Standorten oder die Beförderung wichtiger Gäste und Delegationen. Wir verstehen die besonderen Anforderungen des Geschäftslebens und handeln entsprechend diskret und professionell.</p>
+                    
+                    <p>Auch für private Anlässe sind wir der richtige Partner. Ob Hochzeiten, Jubiläen, Konzertbesuche oder andere besondere Ereignisse – mit unserem Service wird Ihr besonderer Tag noch unvergesslicher. Wir kümmern uns um die Logistik, damit Sie sich voll und ganz auf das Erlebnis konzentrieren können.</p>
+                    
+                    <p>Stadttouren und Sightseeing sind weitere Spezialgebiete. Entdecken Sie Belgien bequem mit einem ortskundigen Fahrer, der Ihnen nicht nur die klassischen Sehenswürdigkeiten zeigt, sondern auch Geheimtipps verrät. So wird jede Fahrt zu einem kleinen Abenteuer.</p>
+                </section>
+
+                <section>
+                    <h3>Der Unterschied zwischen Standard-Taxi und Premium-Fahrerservice</h3>
+                    <p>Viele fragen sich, was einen professionellen Fahrerservice von einem herkömmlichen Taxi unterscheidet. Die Antwort liegt im Detail und in der Servicequalität. Während Taxis eine wichtige Rolle im urbanen Transportwesen spielen, bietet ein Premium-Fahrerservice ein ganz anderes Erlebnis.</p>
+                    
+                    <p>Zunächst einmal haben Sie bei uns Planungssicherheit. Ihre Fahrt ist im Voraus gebucht, der Wagen wartet zu der vereinbarten Zeit, und Sie müssen nicht auf der Straße nach einem verfügbaren Taxi suchen. Dies ist besonders bei wichtigen Terminen oder Flügen von unschätzbarem Wert.</p>
+                    
+                    <p>Die Fahrzeuge selbst sind ein weiterer großer Unterschied. Unsere Flotte besteht aus hochwertigen, gepflegten Fahrzeugen, die regelmäßig gewartet und gereinigt werden. Sie können sicher sein, in einem komfortablen, sauberen Wagen zu reisen, der mit Annehmlichkeiten wie Klimaanlage, bequemen Sitzen und auf Wunsch sogar WLAN ausgestattet ist.</p>
+                    
+                    <p>Auch die Fahrer machen den Unterschied. Unsere Chauffeure sind sorgfältig ausgewählt, umfassend geschult und kennen sich bestens aus. Sie fahren nicht nur sicher und vorausschauend, sondern verstehen auch die Bedeutung von Diskretion und professionellem Auftreten. Ein freundlicher, aber nicht aufdringlicher Service ist unser Markenzeichen.</p>
+                </section>
+
+                <section>
+                    <h3>Sicherheit hat bei uns oberste Priorität</h3>
+                    <p>In einer Zeit, in der Mobilität immer wichtiger wird, darf die Sicherheit niemals zu kurz kommen. Bei unserem Fahrerservice nehmen wir dieses Thema sehr ernst. Alle unsere Fahrer durchlaufen gründliche Hintergrundprüfungen und verfügen über langjährige Fahrerfahrung sowie makellose Führungszeugnisse.</p>
+                    
+                    <p>Regelmäßige Schulungen in defensivem Fahren, Kundenservice und Notfallmanagement sind selbstverständlich. Unsere Chauffeure sind darauf trainiert, auch in unerwarteten Situationen ruhig und besonnen zu reagieren. Ihre Sicherheit und Ihr Wohlbefinden stehen immer an erster Stelle.</p>
+                    
+                    <p>Auch technisch sind wir auf dem neuesten Stand. Unsere Fahrzeuge werden regelmäßig inspiziert und sind mit modernsten Sicherheitssystemen ausgestattet. Von ABS und ESP über Airbags bis hin zu fortschrittlichen Fahrerassistenzsystemen – wir investieren kontinuierlich in die Sicherheit unserer Passagiere.</p>
+                    
+                    <p>Zusätzlich sind alle Fahrten vollständig versichert. Im unwahrscheinlichen Fall eines Schadens oder Unfalls sind Sie rundum abgesichert. Diese Gewissheit gibt Ihnen die Ruhe, sich entspannt zurückzulehnen und die Fahrt zu genießen.</p>
+                </section>
+
+                <section>
+                    <h3>Nachhaltigkeit und Umweltbewusstsein</h3>
+                    <p>Als modernes Unternehmen sind wir uns unserer Verantwortung gegenüber der Umwelt bewusst. Daher arbeiten wir kontinuierlich daran, unseren ökologischen Fußabdruck zu reduzieren. Ein wichtiger Schritt ist die schrittweise Modernisierung unserer Flotte mit Hybrid- und Elektrofahrzeugen.</p>
+                    
+                    <p>Diese Fahrzeuge bieten nicht nur Umweltvorteile, sondern auch ein besonders ruhiges und angenehmes Fahrerlebnis. Die geringeren Emissionen tragen zur Luftqualität in Belgiens Städten bei, und Sie können mit gutem Gewissen reisen, wissend, dass Sie einen Beitrag zum Umweltschutz leisten.</p>
+                    
+                    <p>Darüber hinaus optimieren wir unsere Routen kontinuierlich, um unnötige Fahrten und Leerkilometer zu vermeiden. Durch intelligente Planung und den Einsatz moderner Technologie maximieren wir die Effizienz und minimieren den Kraftstoffverbrauch. Mehr Informationen zu unseren <a href="services.html">umfangreichen Serviceleistungen</a> finden Sie auf unserer Leistungsseite.</p>
+                </section>
+            </article>
+
+            <section class="map-section">
+                <h2>Besuchen Sie uns</h2>
+                <p>Finden Sie unseren Standort und kontaktieren Sie uns für individuelle Beratung</p>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d728586.1611267922!2d0.945865!3d41.369963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x694081610ff33f11%3A0xad968267c0c710a4!2sINTER%20DRIVERS!5e1!3m2!1sen!2sph!4v1771784727003!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <aside class="author-bio">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                    <h3>Über den Autor</h3>
+                    <p><strong>Experte für Mobilitätslösungen</strong></p>
+                    <p>Mit langjähriger Erfahrung in der Transportbranche und einem tiefen Verständnis für die Bedürfnisse moderner Geschäfts- und Privatkunden, teilen unsere Experten ihr Wissen über erstklassige Fahrerservices. Unser Ziel ist es, Ihnen nicht nur einen Service zu bieten, sondern ein Erlebnis zu schaffen, das Ihre Erwartungen übertrifft.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Datenschutz</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2026 inter driver. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

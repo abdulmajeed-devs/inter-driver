@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Erfahren Sie mehr über Inter Driver - Ihren vertrauenswürdigen Partner für professionelle Fahrerservices in Belgien seit vielen Jahren.">
+    <title>Über uns - Inter Driver Fahrerservice</title>
+    <link rel="canonical" href="http://inter-driver.ondigitalocean.app/about.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.ondigitalocean.app/about.html">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #dee2e6;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-sm) 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        main {
+            padding: var(--spacing-lg) 0;
+        }
+        
+        section {
+            margin-bottom: var(--spacing-md);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        p {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .value-card {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+        }
+        
+        .author-bio {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-top: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
+        
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+            flex-shrink: 0;
+        }
+        
+        .author-info h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-links {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .footer-links a {
+            margin: 0 var(--spacing-sm);
+        }
+        
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: var(--spacing-sm);
+                justify-content: center;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">inter driver</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Leistungen</a></li>
+                    <li><a href="how-it-works.html">So funktioniert's</a></li>
+                    <li><a href="pricing.html">Preise</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Über Inter Driver</h1>
+            <p>Lernen Sie unser Unternehmen und unsere Werte kennen</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <article>
+                <section>
+                    <h2>Unsere Geschichte und Mission</h2>
+                    <p>Inter Driver wurde aus der Vision gegründet, professionellen Fahrerservice auf höchstem Niveau anzubieten. Was als kleines Unternehmen mit wenigen Fahrzeugen begann, hat sich zu einem der führenden Anbieter in Belgien entwickelt. Unsere Reise war geprägt von kontinuierlichem Wachstum, ständiger Verbesserung und vor allem von der Zufriedenheit unserer Kunden.</p>
+                    
+                    <p>Unsere Mission ist klar: Wir möchten nicht einfach nur Fahrten anbieten, sondern Erlebnisse schaffen. Jeder Kunde, der bei uns einsteigt, soll sich wertgeschätzt, sicher und komfortabel fühlen. Diese Philosophie durchzieht jeden Aspekt unseres Unternehmens – von der Auswahl unserer Fahrer über die Wartung unserer Fahrzeuge bis hin zum Kundenservice.</p>
+                    
+                    <p>Im Laufe der Jahre haben wir Tausende von zufriedenen Kunden bedient, von Geschäftsleuten und Unternehmern bis hin zu Familien und Touristen. Jede Fahrt ist für uns eine Gelegenheit, unsere Exzellenz unter Beweis zu stellen und langfristige Beziehungen aufzubauen. Viele unserer Kunden sind Stammkunden geworden, die uns vertrauen und immer wieder auf unsere Dienste zurückgreifen.</p>
+                </section>
+
+                <section>
+                    <h2>Unsere Werte und Prinzipien</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h3>Professionalität</h3>
+                            <p>Wir setzen die höchsten Standards in allem, was wir tun. Von der Kleidung unserer Fahrer bis zur Sauberkeit unserer Fahrzeuge – Professionalität ist kein Bonus, sondern eine Selbstverständlichkeit.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <h3>Zuverlässigkeit</h3>
+                            <p>Auf uns können Sie sich verlassen. Wir sind pünktlich, vorbereitet und halten unsere Versprechen. Ihre Termine und Zeitpläne sind uns heilig, und wir tun alles, um diese einzuhalten.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <h3>Diskretion</h3>
+                            <p>Was im Auto besprochen wird, bleibt im Auto. Unsere Fahrer sind geschult in absoluter Vertraulichkeit und Diskretion, besonders wichtig für Geschäftskunden mit sensiblen Themen.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <h3>Kundenorientierung</h3>
+                            <p>Sie stehen im Mittelpunkt. Wir hören auf Ihre Bedürfnisse, passen uns Ihren Wünschen an und gehen die Extra-Meile, um Sie zufriedenzustellen. Ihr Feedback ist uns wichtig und fließt in unsere kontinuierliche Verbesserung ein.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <h3>Sicherheit</h3>
+                            <p>Ihre Sicherheit ist unser oberstes Gebot. Wir investieren in die beste Ausrüstung, schulen unsere Fahrer regelmäßig und halten uns an alle Sicherheitsstandards und gesetzlichen Vorschriften.</p>
+                        </div>
+                        
+                        <div class="value-card">
+                            <h3>Innovation</h3>
+                            <p>Wir ruhen uns nicht auf unseren Erfolgen aus. Durch den Einsatz modernster Technologie, die Erweiterung unserer Flotte mit umweltfreundlichen Fahrzeugen und die Optimierung unserer Prozesse bleiben wir am Puls der Zeit.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Unser Team – Das Herzstück unseres Erfolgs</h3>
+                    <p>Hinter jedem erfolgreichen Unternehmen stehen herausragende Menschen. Bei Inter Driver sind wir stolz auf unser Team von erfahrenen, professionellen und freundlichen Mitarbeitern. Unsere Chauffeure sind sorgfältig ausgewählt und durchlaufen ein strenges Auswahlverfahren.</p>
+                    
+                    <p>Aber Qualifikation allein reicht uns nicht. Wir suchen nach Menschen mit der richtigen Einstellung – höflich, zuverlässig, diskret und mit einem echten Wunsch, exzellenten Service zu bieten. Jeder Fahrer erhält eine umfassende Schulung, die nicht nur Fahrtechniken umfasst, sondern auch Kundenservice, lokale Kenntnisse und Notfallmanagement.</p>
+                    
+                    <p>Auch nach der Einstellung hört die Entwicklung nicht auf. Regelmäßige Weiterbildungen, Feedback-Gespräche und Leistungsbeurteilungen stellen sicher, dass unser Team immer auf dem neuesten Stand ist und kontinuierlich wächst. Wir investieren in unsere Mitarbeiter, denn wir wissen: Zufriedene Mitarbeiter bedeuten zufriedene Kunden.</p>
+                </section>
+
+                <section>
+                    <h3>Unsere Flotte – Komfort auf Rädern</h3>
+                    <p>Die Qualität unserer Fahrzeuge ist ein wesentlicher Bestandteil unseres Services. Wir bieten eine vielfältige Flotte, die verschiedene Bedürfnisse abdeckt. Von eleganten Limousinen für Geschäftsreisen über geräumige SUVs für Familien bis hin zu Vans für Gruppen – wir haben für jeden Anlass das richtige Fahrzeug.</p>
+                    
+                    <p>Alle Fahrzeuge werden regelmäßig gewartet und sind in einwandfreiem Zustand. Sauberkeit ist für uns nicht verhandelbar – jedes Fahrzeug wird nach jeder Fahrt gereinigt und ist stets präsentabel. Moderne Annehmlichkeiten wie Klimaanlage, bequeme Ledersitze, Getränkehalter und auf Wunsch auch WLAN und Ladestationen für Ihre Geräte sorgen für maximalen Komfort.</p>
+                    
+                    <p>Ein besonderes Augenmerk legen wir auf Nachhaltigkeit. Wir erweitern unsere Flotte kontinuierlich mit Hybrid- und Elektrofahrzeugen, um unseren Beitrag zum Umweltschutz zu leisten. Diese Fahrzeuge bieten nicht nur ökologische Vorteile, sondern auch ein besonders ruhiges und angenehmes Fahrerlebnis.</p>
+                </section>
+
+                <section>
+                    <h3>Unser Engagement für Belgien</h3>
+                    <p>Als belgisches Unternehmen fühlen wir uns diesem Land und seinen Menschen verbunden. Wir kennen die Straßen, die Kultur und die Besonderheiten der verschiedenen Regionen. Diese lokale Expertise ermöglicht es uns, optimale Routen zu wählen, Staus zu vermeiden und Ihnen auch kulturelle Einblicke zu geben.</p>
+                    
+                    <p>Darüber hinaus engagieren wir uns in der Gemeinschaft. Wir unterstützen lokale Veranstaltungen, arbeiten mit regionalen Unternehmen zusammen und tragen zur lokalen Wirtschaft bei. Belgien ist unser Zuhause, und wir sind stolz darauf, hier zu wirken und zu wachsen.</p>
+                </section>
+
+                <section>
+                    <h3>Warum Kunden uns wählen</h3>
+                    <p>In einem wettbewerbsintensiven Markt gibt es viele Optionen für Fahrerservices. Warum entscheiden sich so viele Kunden für Inter Driver? Die Antwort liegt in der Kombination aus Qualität, Zuverlässigkeit und persönlichem Service.</p>
+                    
+                    <p>Wir bieten nicht nur einen Transport von A nach B, sondern ein Gesamterlebnis. Vom ersten Kontakt über die Buchung bis zur Fahrt selbst und dem Follow-up danach – jeder Touchpoint ist sorgfältig gestaltet, um Ihre Erwartungen zu übertreffen. Wir hören zu, passen uns an und gehen auf individuelle Wünsche ein.</p>
+                    
+                    <p>Unsere transparente Preisgestaltung, die hohe Qualität unserer Fahrzeuge und vor allem die Professionalität unserer Fahrer machen den Unterschied. Aber glauben Sie nicht nur uns – zahlreiche positive Bewertungen und Weiterempfehlungen unserer Kunden sprechen für sich.</p>
+                </section>
+
+                <section>
+                    <h3>Blick in die Zukunft</h3>
+                    <p>Wir ruhen uns nicht auf unseren Erfolgen aus. Die Zukunft bringt neue Herausforderungen und Möglichkeiten, und wir sind bereit, diese anzunehmen. Geplant sind weitere Investitionen in umweltfreundliche Technologien, die Erweiterung unserer Dienstleistungen und die kontinuierliche Verbesserung unserer Prozesse.</p>
+                    
+                    <p>Digitalisierung spielt dabei eine wichtige Rolle. Wir arbeiten an noch benutzerfreundlicheren Buchungssystemen, besseren Kommunikationsmöglichkeiten und innovativen Services, die Ihr Erlebnis weiter verbessern. Gleichzeitig bleibt der menschliche Faktor zentral – Technologie soll unterstützen, nicht ersetzen.</p>
+                    
+                    <p>Unser Ziel ist es, weiterhin der bevorzugte Fahrerservice in Belgien zu sein, bekannt für Exzellenz, Zuverlässigkeit und herausragenden Kundenservice. Wir freuen uns darauf, Sie auf dieser Reise zu begleiten.</p>
+                </section>
+            </article>
+
+            <aside class="author-bio">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                    <h3>Geschrieben von</h3>
+                    <p><strong>Management Team Inter Driver</strong></p>
+                    <p><em>Experten für professionelle Mobilitätslösungen</em></p>
+                    <p>Unser Management-Team verfügt über jahrzehntelange Erfahrung in der Transportbranche und ein tiefes Verständnis für die Bedürfnisse anspruchsvoller Kunden. Mit Leidenschaft und Professionalität arbeiten wir täglich daran, den besten Fahrerservice in Belgien anzubieten.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Datenschutz</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2026 inter driver. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

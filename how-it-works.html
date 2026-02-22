@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="So funktioniert unser Fahrerservice: Einfache Buchung, transparente Preise, pünktlicher Service. In nur 3 Schritten zu Ihrer komfortablen Fahrt.">
+    <title>So funktioniert's - Inter Driver Fahrerservice</title>
+    <link rel="canonical" href="http://inter-driver.ondigitalocean.app/how-it-works.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.ondigitalocean.app/how-it-works.html">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #dee2e6;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-sm) 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        main {
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .step {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            padding-left: 5rem;
+        }
+        
+        .step-number {
+            position: absolute;
+            left: var(--spacing-md);
+            top: var(--spacing-md);
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .step h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .step h3 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin-top: var(--spacing-sm);
+            margin-bottom: 0.5rem;
+        }
+        
+        .step ul {
+            margin-left: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .step li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .author-bio {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-top: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
+        
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+            flex-shrink: 0;
+        }
+        
+        .author-info h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-links {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .footer-links a {
+            margin: 0 var(--spacing-sm);
+        }
+        
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: var(--spacing-sm);
+                justify-content: center;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .step {
+                padding-left: var(--spacing-md);
+                padding-top: 4rem;
+            }
+            
+            .step-number {
+                left: 50%;
+                transform: translateX(-50%);
+                top: var(--spacing-sm);
+            }
+            
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">inter driver</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Leistungen</a></li>
+                    <li><a href="how-it-works.html">So funktioniert's</a></li>
+                    <li><a href="pricing.html">Preise</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>So funktioniert's</h1>
+            <p>In wenigen einfachen Schritten zu Ihrer komfortablen Fahrt</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <article>
+                <section>
+                    <p>Bei Inter Driver haben wir den Buchungsprozess so einfach und transparent wie möglich gestaltet. Ob Sie zum ersten Mal unseren Service nutzen oder ein Stammkunde sind – die Buchung ist unkompliziert und schnell. Hier erfahren Sie Schritt für Schritt, wie Sie zu Ihrer professionellen Fahrt kommen.</p>
+                </section>
+
+                <section class="step">
+                    <div class="step-number">1</div>
+                    <h2>Buchungsanfrage stellen</h2>
+                    <p>Der erste Schritt ist denkbar einfach: Kontaktieren Sie uns mit Ihren Fahrtdetails. Dies können Sie auf verschiedene Arten tun – wählen Sie die für Sie bequemste Option.</p>
+                    
+                    <h3>Buchungsmöglichkeiten:</h3>
+                    <ul>
+                        <li><strong>Telefonisch:</strong> Rufen Sie uns an und sprechen Sie direkt mit unserem freundlichen Team. Wir sind 24/7 erreichbar und beraten Sie gerne.</li>
+                        <li><strong>Per E-Mail:</strong> Senden Sie uns eine E-Mail mit Ihren Fahrtdetails. Wir antworten in der Regel innerhalb weniger Stunden.</li>
+                        <li><strong>Online-Formular:</strong> Nutzen Sie unser Kontaktformular auf der Website für eine schnelle Anfrage.</li>
+                        <li><strong>WhatsApp:</strong> Für schnelle Anfragen können Sie uns auch per WhatsApp kontaktieren.</li>
+                    </ul>
+                    
+                    <h3>Welche Informationen benötigen wir?</h3>
+                    <p>Um Ihnen ein präzises Angebot machen zu können, benötigen wir folgende Informationen:</p>
+                    <ul>
+                        <li>Abholadresse und Zieladresse</li>
+                        <li>Datum und gewünschte Abholzeit</li>
+                        <li>Anzahl der Passagiere</li>
+                        <li>Besondere Wünsche (z.B. Kindersitz, viel Gepäck, barrierefreier Zugang)</li>
+                        <li>Art der Fahrt (einfache Fahrt, Rückfahrt, Wartezeit)</li>
+                    </ul>
+                    
+                    <p>Je mehr Details Sie uns geben, desto besser können wir Ihren Service maßschneidern. Keine Sorge – wenn Sie sich bei etwas unsicher sind, helfen wir Ihnen gerne weiter und beraten Sie, welche Option für Ihre Bedürfnisse am besten geeignet ist.</p>
+                    
+                    <h3>Kurzfristige Buchungen</h3>
+                    <p>Auch wenn eine frühzeitige Buchung empfehlenswert ist, verstehen wir, dass manchmal kurzfristige Fahrten notwendig sind. In vielen Fällen können wir auch Last-Minute-Anfragen erfüllen. Rufen Sie uns einfach an, und wir tun unser Bestes, um Ihnen zu helfen.</p>
+                </section>
+
+                <section class="step">
+                    <div class="step-number">2</div>
+                    <h2>Angebot und Bestätigung</h2>
+                    <p>Nachdem Sie Ihre Anfrage gestellt haben, erstellen wir für Sie ein individuelles Angebot. Dieser Prozess ist schnell und transparent.</p>
+                    
+                    <h3>Was beinhaltet unser Angebot?</h3>
+                    <ul>
+                        <li><strong>Festpreis:</strong> Sie erhalten einen klaren, festen Preis für Ihre Fahrt – keine versteckten Kosten oder Überraschungen.</li>
+                        <li><strong>Fahrzeugdetails:</strong> Information über das Fahrzeug, das für Ihre Fahrt vorgesehen ist.</li>
+                        <li><strong>Fahrtdauer:</strong> Geschätzte Fahrtdauer basierend auf Verkehrsbedingungen.</li>
+                        <li><strong>Inkludierte Leistungen:</strong> Übersicht über alle enthaltenen Services (z.B. Wartezeit, Gepäckhilfe).</li>
+                        <li><strong>Zahlungsmöglichkeiten:</strong> Verschiedene Optionen zur Bezahlung.</li>
+                    </ul>
+                    
+                    <h3>Transparente Preisgestaltung</h3>
+                    <p>Unser Preis ist ein Festpreis, der bereits alle Kosten beinhaltet: Fahrerservice, Fahrzeug, Kraftstoff, Mautgebühren (falls zutreffend) und Mehrwertsteuer. Es gibt keine versteckten Aufschläge. Was Sie im Angebot sehen, ist der Preis, den Sie zahlen.</p>
+                    
+                    <p>Bei Flughafenfahrten ist eine angemessene Wartezeit bereits im Preis enthalten. Falls Ihr Flug Verspätung hat, passen wir uns an – ohne zusätzliche Kosten für die erste Stunde Wartezeit.</p>
+                    
+                    <h3>Buchungsbestätigung</h3>
+                    <p>Wenn Sie mit dem Angebot einverstanden sind, bestätigen Sie einfach die Buchung. Sie erhalten dann eine schriftliche Buchungsbestätigung per E-Mail mit allen wichtigen Details:</p>
+                    <ul>
+                        <li>Buchungsnummer für Ihre Referenz</li>
+                        <li>Fahrtdetails (Datum, Zeit, Abholort, Ziel)</li>
+                        <li>Fahrzeug- und Fahrerinformationen</li>
+                        <li>Kontaktdaten für Rückfragen</li>
+                        <li>Zahlungsinformationen</li>
+                    </ul>
+                    
+                    <p>Diese Bestätigung können Sie ausdrucken oder auf Ihrem Smartphone speichern. Sie dient auch als Rechnung, falls Sie die Fahrt geschäftlich nutzen.</p>
+                </section>
+
+                <section class="step">
+                    <div class="step-number">3</div>
+                    <h2>Entspannte Fahrt genießen</h2>
+                    <p>Am Tag Ihrer Fahrt ist alles für Sie vorbereitet. Lehnen Sie sich zurück und genießen Sie den Service.</p>
+                    
+                    <h3>Vor der Abholung</h3>
+                    <p>Einen Tag vor Ihrer Fahrt erhalten Sie eine Erinnerung per E-Mail oder SMS. Am Fahrtag selbst meldet sich Ihr Fahrer etwa 15-30 Minuten vor der Abholung, um zu bestätigen, dass alles bereit ist.</p>
+                    
+                    <p>Bei Flughafenabholungen wartet Ihr Fahrer in der Ankunftshalle mit einem Namensschild. Sie brauchen sich keine Sorgen zu machen – wir verfolgen Ihren Flug in Echtzeit und passen uns bei Verspätungen automatisch an.</p>
+                    
+                    <h3>Während der Fahrt</h3>
+                    <p>Ihr professioneller Chauffeur begrüßt Sie freundlich und hilft Ihnen beim Gepäck. Das Fahrzeug ist sauber, klimatisiert und bereit für eine angenehme Fahrt.</p>
+                    
+                    <p>Während der Fahrt können Sie:</p>
+                    <ul>
+                        <li>Arbeiten oder E-Mails beantworten</li>
+                        <li>Telefonieren oder an Videokonferenzen teilnehmen</li>
+                        <li>Sich entspannen und die Landschaft genießen</li>
+                        <li>Lesen oder Musik hören</li>
+                        <li>Mit dem Fahrer über die Route oder Sehenswürdigkeiten sprechen</li>
+                    </ul>
+                    
+                    <p>Ihr Fahrer kennt die besten Routen und nutzt sein lokales Wissen, um Staus zu vermeiden. Falls Sie spezielle Wünsche haben (z.B. einen kurzen Stopp unterwegs), teilen Sie dies einfach mit – wir sind flexibel und kundenorientiert.</p>
+                    
+                    <h3>Sicherheit an erster Stelle</h3>
+                    <p>Alle unsere Fahrer fahren defensiv und vorausschauend. Ihre Sicherheit und Ihr Komfort haben absolute Priorität. Die Fahrzeuge sind mit modernsten Sicherheitssystemen ausgestattet und werden regelmäßig gewartet.</p>
+                    
+                    <h3>Am Ziel</h3>
+                    <p>Ihr Fahrer bringt Sie direkt zu Ihrer gewünschten Adresse. Falls gewünscht, hilft er Ihnen beim Ausladen des Gepäcks. Bei Geschäftskunden kann auf Wunsch auch eine Rechnung direkt ausgestellt werden.</p>
+                </section>
+
+                <section class="step">
+                    <div class="step-number">4</div>
+                    <h2>Zahlung und Feedback</h2>
+                    <p>Nach der Fahrt sind nur noch wenige einfache Schritte zu erledigen.</p>
+                    
+                    <h3>Zahlungsoptionen</h3>
+                    <p>Wir bieten verschiedene bequeme Zahlungsmöglichkeiten:</p>
+                    <ul>
+                        <li><strong>Barzahlung:</strong> Sie können direkt beim Fahrer in bar bezahlen.</li>
+                        <li><strong>Kartenzahlung:</strong> Bezahlung mit Kredit- oder Debitkarte im Fahrzeug oder vorab online.</li>
+                        <li><strong>Banküberweisung:</strong> Besonders für Firmenkunden mit monatlicher Abrechnung.</li>
+                        <li><strong>Rechnung:</strong> Geschäftskunden erhalten eine detaillierte Rechnung.</li>
+                    </ul>
+                    
+                    <h3>Ihr Feedback ist uns wichtig</h3>
+                    <p>Nach der Fahrt erhalten Sie eine kurze Feedback-Anfrage per E-Mail. Ihre Meinung hilft uns, unseren Service kontinuierlich zu verbessern. Wir lesen jedes Feedback und nehmen Anregungen ernst.</p>
+                    
+                    <p>Positive Erfahrung? Wir würden uns freuen, wenn Sie uns weiterempfehlen oder eine Bewertung hinterlassen. Gab es Probleme? Kontaktieren Sie uns bitte direkt – wir nehmen jede Beschwerde ernst und arbeiten an Lösungen.</p>
+                </section>
+
+                <section>
+                    <h2>Zusätzliche Informationen</h2>
+                    
+                    <h3>Änderungen und Stornierungen</h3>
+                    <p>Wir verstehen, dass Pläne sich ändern können. Wenn Sie Ihre Buchung ändern oder stornieren müssen, kontaktieren Sie uns so früh wie möglich. Bei rechtzeitiger Benachrichtigung (mindestens 24 Stunden vor der Fahrt) ist eine kostenlose Stornierung in der Regel möglich.</p>
+                    
+                    <h3>Regelmäßige Fahrten</h3>
+                    <p>Benötigen Sie regelmäßig einen Fahrerservice? Wir bieten spezielle Konditionen für wiederkehrende Fahrten. Kontaktieren Sie uns für ein individuelles Angebot, das auf Ihre spezifischen Bedürfnisse zugeschnitten ist.</p>
+                    
+                    <h3>Geschäftskunden-Account</h3>
+                    <p>Firmenkunden können einen Business-Account einrichten, der folgende Vorteile bietet:</p>
+                    <ul>
+                        <li>Vereinfachter Buchungsprozess</li>
+                        <li>Monatliche Sammelrechnung</li>
+                        <li>Mehrere autorisierte Nutzer</li>
+                        <li>Detaillierte Fahrtberichte</li>
+                        <li>Spezielle Unternehmenskonditionen</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Häufige Fragen zum Ablauf</h2>
+                    
+                    <h3>Wie früh sollte ich buchen?</h3>
+                    <p>Für Planungssicherheit empfehlen wir eine Buchung mindestens 24 Stunden im Voraus. Für besondere Anlässe oder zu Stoßzeiten gerne noch früher. Last-Minute-Buchungen versuchen wir aber nach Möglichkeit ebenfalls zu ermöglichen.</p>
+                    
+                    <h3>Was passiert bei Verspätungen?</h3>
+                    <p>Bei Flughafenabholungen verfolgen wir Ihren Flug automatisch. Bei anderen Fahrten kontaktieren Sie uns bitte, wenn Sie sich verspäten. Eine gewisse Wartezeit ist bereits einkalkuliert.</p>
+                    
+                    <h3>Kann ich während der Fahrt Stopps einlegen?</h3>
+                    <p>Ja, zusätzliche Stopps sind möglich. Teilen Sie uns dies am besten schon bei der Buchung mit, damit wir dies in den Preis und die Zeitplanung einbeziehen können.</p>
+                    
+                    <h3>Gibt es einen Mindestfahrpreis?</h3>
+                    <p>Ja, es gibt einen Mindestpreis pro Fahrt. Details dazu finden Sie auf unserer Preisseite oder erfahren Sie bei der Anfrage.</p>
+                    
+                    <h3>Sind Ihre Fahrer versichert?</h3>
+                    <p>Absolut. Alle unsere Fahrten sind vollständig versichert. Sie können sich darauf verlassen, dass Sie im unwahrscheinlichen Fall eines Schadens abgesichert sind.</p>
+                </section>
+
+                <section>
+                    <h2>Bereit für Ihre erste Fahrt?</h2>
+                    <p>Jetzt, da Sie wissen, wie einfach der Prozess ist, freuen wir uns darauf, Sie als Kunden begrüßen zu dürfen. Kontaktieren Sie uns für Ihre erste Buchung oder wenn Sie Fragen haben. Unser Team steht Ihnen jederzeit zur Verfügung.</p>
+                    
+                    <p>Erleben Sie den Unterschied eines professionellen Fahrerservices – komfortabel, zuverlässig und immer auf höchstem Niveau.</p>
+                </section>
+            </article>
+
+            <aside class="author-bio">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                    <h3>Geschrieben von</h3>
+                    <p><strong>Kundenservice-Team Inter Driver</strong></p>
+                    <p><em>Ihre Ansprechpartner für reibungslose Buchungen</em></p>
+                    <p>Unser Kundenservice-Team begleitet Sie durch den gesamten Buchungsprozess. Mit jahrelanger Erfahrung im Kundenservice sorgen wir dafür, dass Ihre Fahrt von der ersten Anfrage bis zur Ankunft am Ziel perfekt organisiert ist.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Datenschutz</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2026 inter driver. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>

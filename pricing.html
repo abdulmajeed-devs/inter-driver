@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.region" content="BE">
+    <meta name="geo.placename" content="Belgium">
+    <meta name="description" content="Transparente Preise für professionellen Fahrerservice in Belgien. Individuelle Angebote für Airport-Transfer, Business-Fahrten und mehr.">
+    <title>Preise - Inter Driver Fahrerservice</title>
+    <link rel="canonical" href="http://inter-driver.ondigitalocean.app/pricing.html">
+    <link rel="alternate" hreflang="de-be" href="http://inter-driver.ondigitalocean.app/pricing.html">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e67e22;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --border-color: #dee2e6;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-sm) 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        main {
+            padding: var(--spacing-lg) 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+        
+        .pricing-card {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary-color);
+            text-align: center;
+        }
+        
+        .pricing-card h3 {
+            margin-top: 0;
+        }
+        
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .pricing-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .pricing-card li:last-child {
+            border-bottom: none;
+        }
+        
+        .quote-form {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-top: var(--spacing-md);
+        }
+        
+        .author-bio {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin-top: var(--spacing-lg);
+            display: flex;
+            gap: var(--spacing-md);
+            align-items: flex-start;
+        }
+        
+        .author-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+            flex-shrink: 0;
+        }
+        
+        .author-info h3 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-links {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .footer-links a {
+            margin: 0 var(--spacing-sm);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: var(--spacing-sm);
+        }
+        
+        .cta-button:hover {
+            background-color: var(--accent-color);
+        }
+        
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: var(--spacing-sm);
+                justify-content: center;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">inter driver</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="services.html">Leistungen</a></li>
+                    <li><a href="how-it-works.html">So funktioniert's</a></li>
+                    <li><a href="pricing.html">Preise</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Unsere Preise</h1>
+            <p>Transparent, fair und ohne versteckte Kosten</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <article>
+                <section>
+                    <h2>Transparente Preisgestaltung</h2>
+                    <p>Bei Inter Driver glauben wir an absolute Transparenz. Wenn Sie ein Angebot von uns erhalten, wissen Sie genau, was Sie bezahlen – ohne versteckte Gebühren, ohne Überraschungen. Unser Festpreis beinhaltet alle Kosten: professioneller Fahrer, gepflegtes Fahrzeug, Kraftstoff, eventuelle Mautgebühren und die gesetzliche Mehrwertsteuer.</p>
+                    
+                    <p>Die Preise variieren je nach Strecke, Fahrzeugtyp und spezifischen Anforderungen. Um Ihnen ein genaues Angebot zu machen, benötigen wir einige Details zu Ihrer geplanten Fahrt. Kontaktieren Sie uns einfach, und wir erstellen Ihnen ein individuelles Angebot.</p>
+                </section>
+
+                <section>
+                    <h2>Preisbeispiele und Orientierungswerte</h2>
+                    <p>Um Ihnen eine Vorstellung unserer Preisgestaltung zu geben, hier einige Beispiele für häufig gebuchte Strecken und Services:</p>
+                    
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h3>Airport-Transfer</h3>
+                            <p>Brüssel Zentrum ↔ Brussels Airport</p>
+                            <ul>
+                                <li>Standardlimousine ab 65€</li>
+                                <li>Premium-Limousine ab 85€</li>
+                                <li>Van (bis 8 Pers.) ab 95€</li>
+                                <li>Wartezeit inkludiert</li>
+                                <li>Flugverfolgung inklusive</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <h3>City-Transfer</h3>
+                            <p>Innerhalb Brüssel (bis 15 km)</p>
+                            <ul>
+                                <li>Standardlimousine ab 45€</li>
+                                <li>Premium-Limousine ab 60€</li>
+                                <li>Van (bis 8 Pers.) ab 70€</li>
+                                <li>Pünktliche Abholung</li>
+                                <li>Flexible Routenplanung</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <h3>Stundenbasis</h3>
+                            <p>Für längere Verfügbarkeit</p>
+                            <ul>
+                                <li>Standardlimousine ab 60€/Std.</li>
+                                <li>Premium-Limousine ab 80€/Std.</li>
+                                <li>Van (bis 8 Pers.) ab 90€/Std.</li>
+                                <li>Mindestbuchung 3 Stunden</li>
+                                <li>Ideal für Stadttouren</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <p><em>Bitte beachten Sie: Diese Preise dienen nur zur Orientierung. Tatsächliche Preise können je nach Datum, Uhrzeit, Verkehrsaufkommen und spezifischen Anforderungen variieren. Für ein genaues Angebot kontaktieren Sie uns bitte direkt.</em></p>
+                </section>
+
+                <section>
+                    <h3>Was ist im Preis enthalten?</h3>
+                    <p>Unser Festpreis umfasst alle wesentlichen Leistungen, damit Sie sich keine Gedanken über zusätzliche Kosten machen müssen:</p>
+                    <ul>
+                        <li><strong>Professioneller Chauffeur:</strong> Erfahrener, geschulter Fahrer mit ausgezeichneten Ortskenntnissen</li>
+                        <li><strong>Gepflegtes Fahrzeug:</strong> Sauberes, modernes Fahrzeug mit allen Annehmlichkeiten</li>
+                        <li><strong>Kraftstoff:</strong> Alle Kraftstoffkosten sind bereits inkludiert</li>
+                        <li><strong>Mautgebühren:</strong> Eventuelle Autobahngebühren sind bereits im Preis enthalten</li>
+                        <li><strong>Parkgebühren:</strong> Kosten für Parken während der Fahrt</li>
+                        <li><strong>Mehrwertsteuer:</strong> Alle Steuern sind bereits eingerechnet</li>
+                        <li><strong>Wartezeit:</strong> Bei Flughafenabholungen ist eine angemessene Wartezeit inkludiert</li>
+                        <li><strong>Gepäckhilfe:</strong> Unterstützung beim Be- und Entladen Ihres Gepäcks</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Zusatzkosten und Optionen</h3>
+                    <p>In den meisten Fällen gibt es keine zusätzlichen Kosten. Nur für besondere Anforderungen können Aufpreise anfallen:</p>
+                    <ul>
+                        <li><strong>Kindersitze:</strong> Auf Anfrage verfügbar (meist kostenlos, bitte bei Buchung angeben)</li>
+                        <li><strong>Übermäßige Wartezeit:</strong> Wenn die inkludierte Wartezeit überschritten wird</li>
+                        <li><strong>Sehr frühe/späte Abholzeiten:</strong> Nächtliche Fahrten (23:00-06:00 Uhr) können einen geringen Aufpreis haben</li>
+                        <li><strong>Kurzfristige Buchungen:</strong> Last-Minute-Buchungen (weniger als 3 Stunden vor Abholung) nach Verfügbarkeit</li>
+                        <li><strong>Sonderwünsche:</strong> Besondere Dekoration für Hochzeiten, spezielle Ausstattung, etc.</li>
+                    </ul>
+                    
+                    <p>Alle möglichen Zusatzkosten werden Ihnen transparent im Angebot mitgeteilt, bevor Sie buchen. Es gibt keine versteckten Gebühren.</p>
+                </section>
+
+                <section>
+                    <h2>Rabatte und Sonderkonditionen</h2>
+                    
+                    <h3>Corporate Accounts</h3>
+                    <p>Für Firmenkunden mit regelmäßigem Fahrbedarf bieten wir spezielle Business-Konditionen:</p>
+                    <ul>
+                        <li>Vergünstigte Tarife bei wiederkehrenden Buchungen</li>
+                        <li>Monatliche Sammelrechnung für einfache Buchhaltung</li>
+                        <li>Prioritätsservice mit garantierter Verfügbarkeit</li>
+                        <li>Dedizierte Account-Manager für persönliche Betreuung</li>
+                        <li>Flexible Zahlungsziele</li>
+                    </ul>
+                    
+                    <h3>Stammkunden-Vorteile</h3>
+                    <p>Wir schätzen die Treue unserer Kunden. Stammkunden profitieren von:</p>
+                    <ul>
+                        <li>Treueprogramm mit Rabatten nach bestimmten Buchungen</li>
+                        <li>Bevorzugte Behandlung bei der Buchung</li>
+                        <li>Möglichkeit, bevorzugte Fahrer anzufordern</li>
+                        <li>Exklusive Sonderangebote und Promotionen</li>
+                    </ul>
+                    
+                    <h3>Langstrecken-Pakete</h3>
+                    <p>Für mehrtägige Buchungen oder sehr lange Strecken erstellen wir individuelle Paketpreise, die oft günstiger sind als die Summe der Einzelfahrten.</p>
+                </section>
+
+                <section>
+                    <h2>Zahlungsmöglichkeiten</h2>
+                    <p>Wir bieten verschiedene Zahlungsoptionen für Ihre Bequemlichkeit:</p>
+                    <ul>
+                        <li><strong>Barzahlung:</strong> Direkt beim Fahrer am Ende der Fahrt</li>
+                        <li><strong>Kartenzahlung:</strong> Kredit- und Debitkarten werden akzeptiert</li>
+                        <li><strong>Banküberweisung:</strong> Vorabzahlung oder auf Rechnung (für Firmenkunden)</li>
+                        <li><strong>Monatliche Abrechnung:</strong> Für Corporate Accounts mit regelmäßigen Fahrten</li>
+                    </ul>
+                    
+                    <p>Alle Zahlungen werden mit einer detaillierten Rechnung dokumentiert, die alle relevanten Informationen für Ihre Buchhaltung enthält.</p>
+                </section>
+
+                <section>
+                    <h2>Stornierung und Änderungen</h2>
+                    <p>Wir verstehen, dass Pläne sich ändern können. Unsere Stornierungsbedingungen sind fair und kundenfreundlich:</p>
+                    <ul>
+                        <li><strong>Mehr als 24 Stunden vor Abholung:</strong> Kostenlose Stornierung oder Änderung</li>
+                        <li><strong>12-24 Stunden vor Abholung:</strong> 50% des Fahrpreises</li>
+                        <li><strong>Weniger als 12 Stunden vor Abholung:</strong> 100% des Fahrpreises</li>
+                        <li><strong>No-Show (nicht erscheinen):</strong> 100% des Fahrpreises</li>
+                    </ul>
+                    
+                    <p>Änderungen an Abholzeit, -ort oder Ziel sind in der Regel kostenlos möglich, wenn Sie uns rechtzeitig informieren. Bei wesentlichen Änderungen, die den Preis beeinflussen, erhalten Sie ein neues Angebot.</p>
+                </section>
+
+                <section class="quote-form">
+                    <h2>Individuelles Angebot anfordern</h2>
+                    <p>Für ein genaues, auf Ihre Bedürfnisse zugeschnittenes Angebot, kontaktieren Sie uns bitte mit folgenden Informationen:</p>
+                    <ul>
+                        <li>Start- und Zieladresse</li>
+                        <li>Datum und gewünschte Abholzeit</li>
+                        <li>Anzahl der Passagiere und Gepäckstücke</li>
+                        <li>Art der Fahrt (einfache Fahrt, Rückfahrt, Wartezeit, etc.)</li>
+                        <li>Fahrzeugpräferenz (Standard, Premium, Van)</li>
+                        <li>Besondere Anforderungen oder Wünsche</li>
+                    </ul>
+                    
+                    <p>Sie erreichen uns telefonisch, per E-Mail oder über unser Kontaktformular. Wir erstellen Ihr persönliches Angebot in der Regel innerhalb weniger Stunden.</p>
+                    
+                    <a href="contact.html" class="cta-button">Jetzt Angebot anfordern</a>
+                </section>
+
+                <section>
+                    <h2>Warum sich unsere Preise lohnen</h2>
+                    <p>Professioneller Fahrerservice mag auf den ersten Blick teurer erscheinen als Alternativen wie öffentliche Verkehrsmittel oder Selbstfahren. Doch wenn Sie alle Faktoren berücksichtigen, ist unser Service eine wertvolle Investition:</p>
+                    
+                    <ul>
+                        <li><strong>Zeitersparnis:</strong> Nutzen Sie die Fahrzeit produktiv statt im Stau zu stehen</li>
+                        <li><strong>Stressreduktion:</strong> Kein Kampf um Parkplätze, keine Navigation durch unbekannte Gebiete</li>
+                        <li><strong>Sicherheit:</strong> Professionelle Fahrer mit ausgezeichneten Kenntnissen und Versicherung</li>
+                        <li><strong>Komfort:</strong> Entspannte Fahrt in gepflegten, hochwertigen Fahrzeugen</li>
+                        <li><strong>Zuverlässigkeit:</strong> Garantierte Pünktlichkeit und Verfügbarkeit</li>
+                        <li><strong>Professionalität:</strong> Machen Sie einen ausgezeichneten Eindruck bei Geschäftspartnern</li>
+                    </ul>
+                    
+                    <p>Wenn Sie diese Faktoren gegen den Preis aufwiegen, werden Sie feststellen, dass unser Service ein ausgezeichnetes Preis-Leistungs-Verhältnis bietet.</p>
+                </section>
+            </article>
+
+            <aside class="author-bio">
+                <div class="author-avatar"></div>
+                <div class="author-info">
+                    <h3>Geschrieben von</h3>
+                    <p><strong>Pricing-Team Inter Driver</strong></p>
+                    <p><em>Experten für faire und transparente Preisgestaltung</em></p>
+                    <p>Unser Pricing-Team arbeitet daran, Ihnen die besten Tarife bei gleichbleibend hoher Servicequalität zu bieten. Wir glauben an Transparenz und Fairness und stehen Ihnen gerne für Fragen zur Verfügung.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="privacy.html">Datenschutz</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2026 inter driver. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+</body>
+</html>
